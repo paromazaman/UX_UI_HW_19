@@ -1,0 +1,88 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+nav {
+    width: 73%;
+    padding: 1%;
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: greenyellow;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul{
+    display: inline-block;
+    vertical-align: top;
+}
+footer ul li {
+    text-align:center
+}
+
+body{
+    background-color: lightblue;
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexChild{
+    width: 33%;
+    margin: auto;
+    padding: 20px;
+}
+
+.workItem1{
+    grid-area: workItem1;
+}
+.workItem2{
+    grid-area: workItem2;
+}
+.workItem3{
+    grid-area: workItem3;
+}
+.workGrid{
+    display: grid;
+    grid-template-areas: "workItem1 workItem2 workItem3";
+}
+
+@media only screen and (max-width:600){
+    .flexContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .workGrid{
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "workItem1"
+        "workItem2"
+        "workItem3";
+    }
+}
